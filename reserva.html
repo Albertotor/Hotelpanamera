@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label{ 
+            border: 2px solid rgb(255, 0, 0) ;
+        background-color: rgb(255, 217, 0);}
+        
+        input, select{ padding: 5px;}
+        
+        </style>
+        
+        </head>
+        <body style="background-color: rgb(162, 162, 248);">
+            <h1> Haga su reserva </h1>
+            <form action="procesareserva.php" method="get">
+            
+            <fieldset>
+        <legend >
+            Datos personales 
+        </legend>
+              
+        <p><label for="">Nombre:</label> <input type="text" name="nombre" id="nom" maxlength="100" required placeholder="Escriba su nombre" autofocus>
+        </p>
+        <p><label for="">Apellidos:</label> <input type="text" name="Apellidos" id="ape" maxlength="100"  required autofocus  placeholder="Escriba sus dos apellidos">
+        </p>
+        <p><label for="">DNI:</label> <input  required type="DNI" name="DNI" id="DNI" maxlength="10"  placeholder="El DNI con letra">
+        </p>
+        </fieldset>
+        
+        <fieldset>
+            <legend >
+                Datos de su estancia 
+            </legend>
+        <p><label for="">Individual</label> <input type="radio" name="Habitación" id="ind" value="h"> 
+        <label for="">Doble</label> <input type="radio" name="Habitación" id="muj" value="dob" checked> 
+        <label for="">triple</label> <input type="radio" name="Habitación" id="muj" value="tri" checked> 
+        <p>
+            <label for="tipo">Número de personas:</label>
+            <select name="tipohab" id="tipo" >
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            
+            </select>
+            </p>
+        </p>
+        <p>
+            <label for="">Llevo mascota</label> <input type="checkbox" value="mas" name="mascota" id="mascota" >
+        </p>
+        <p>
+            <label for="">Fecha de llegada </label>
+            <input type="date" name="fecha de llegada" id="fecha de llegada">
+            </p>
+            <p>
+                <label for="">hora de llegada </label>
+                <input type="time" name="hora del llegada " id="hora del llegada ">
+                </p>
+            </fieldset>
+        
+        <input style="margin-top: 10px;" type="submit" value="Enviar">
+        <input style="margin-top: 10px;" type="reset" value="Reiniciar">
+        
+        
+            <a href="index.html">Volver</a>
+        </form>
+
+        </body>
+        </html>
